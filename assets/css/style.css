@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+
+:root {
+  /* Latar Belakang */
+  --bg-main: #FAF6F5;
+  --bg-secondary: #EFE7E3;
+  --bg-surface: #FFFFFF;
+
+  /* Warna Kartu Pastel */
+  --card-pink: #F2C4C8;
+  --card-pink-dark: #EC9AA2;
+  --card-peach: #F6D7B7;
+  --card-lavender: #D3CCF8;
+  --card-mint: #BCEAD5;
+
+  /* Teks & Tombol Utama */
+  --text-primary: #18181B;
+  --text-secondary: #6E6A69;
+  --accent-dark: #18181B;
+}
