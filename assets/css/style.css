@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: aqua;
-}
-
 :root {
   /* Latar Belakang */
   --bg-main: #FAF6F5;
@@ -22,4 +15,43 @@
   --text-primary: #18181B;
   --text-secondary: #6E6A69;
   --accent-dark: #18181B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+/* Membuat 3 kolom berjejer ke samping */
+.app-container {
+  display: flex;
+  min-height: 100vh; /* Tinggi minimal satu layar penuh */
+  padding: 16px; /* Jarak tepi layar seperti di gambar */
+  gap: 24px; /* Jarak antar kolom */
+}
+
+.sidebar {
+  width: 80px; /* Lebar kecil karena hanya berisi ikon */
+  background-color: #EFE7E3;
+  border-radius: 24px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-content {
+  flex: 1; /* Otomatis mengambil sisa ruang paling lebar di tengah */
+  padding: 20px 10px;
+}
+
+.right-panel {
+  width: 320px; /* Lebar tetap untuk panel profil */
+  background-color: #EFE7E3;
+  border-radius: 24px;
+  padding: 24px;
 }
